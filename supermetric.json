@@ -1,0 +1,86 @@
+{
+  "95a85345-ef63-4ced-a0b1-56c952e651c6": {
+    "resourceKinds": [
+      {
+        "resourceKindKey": "Storage Tier",
+        "adapterKindKey": "Container"
+      }
+    ],
+    "modificationTime": 1586918114454,
+    "name": "Storage Tier - Potential Savings",
+    "formula": "sum(${adaptertype=VMWARE, objecttype=Datastore, metric=reclaimable|orphaned_disk|cost, depth=1})",
+    "description": "",
+    "unitId": "currencymonth",
+    "modifiedBy": "6df558f7-25df-4222-96b9-ade784399d19"
+  },
+  "32f38a0b-9c34-4949-ac8d-72d88f2a172d": {
+    "resourceKinds": [
+      {
+        "resourceKindKey": "Storage Tier",
+        "adapterKindKey": "Container"
+      }
+    ],
+    "modificationTime": 1586918154782,
+    "name": "Storage Tier - Provisioned Consumer Space",
+    "formula": "sum(${adaptertype=VMWARE, objecttype=Datastore, metric=capacity|consumer_provisioned, depth=1})",
+    "description": "",
+    "unitId": "gb",
+    "modifiedBy": "6df558f7-25df-4222-96b9-ade784399d19"
+  },
+  "8d091c1d-1d17-4bd5-a38c-b2ea3fee155c": {
+    "resourceKinds": [
+      {
+        "resourceKindKey": "Storage Tier",
+        "adapterKindKey": "Container"
+      }
+    ],
+    "modificationTime": 1586918247749,
+    "name": "Storage Tier - Total Cost",
+    "formula": "sum(${adaptertype=VMWARE, objecttype=Datastore, metric=cost|totalCost, depth=1})",
+    "description": "",
+    "unitId": "currencymonth",
+    "modifiedBy": "6df558f7-25df-4222-96b9-ade784399d19"
+  },
+  "72b59a9c-0db9-4a85-8200-0f36bad4b6b7": {
+    "resourceKinds": [
+      {
+        "resourceKindKey": "Storage Tier",
+        "adapterKindKey": "Container"
+      }
+    ],
+    "modificationTime": 1586918305981,
+    "name": "Storage Tier - Used Space",
+    "formula": "sum(${adaptertype=VMWARE, objecttype=Datastore, metric=capacity|used_space, depth=1})",
+    "description": "",
+    "unitId": "gb",
+    "modifiedBy": "6df558f7-25df-4222-96b9-ade784399d19"
+  },
+  "052bdc17-2080-4fbb-a1f8-0cd564a1c6b6": {
+    "resourceKinds": [
+      {
+        "resourceKindKey": "Storage Tier",
+        "adapterKindKey": "Container"
+      }
+    ],
+    "modificationTime": 1586918191134,
+    "name": "Storage Tier - Reclaimable Orphaned Disk Space",
+    "formula": "sum(${adaptertype=VMWARE, objecttype=Datastore, metric=reclaimable|orphaned_disk|diskspace, depth=1})",
+    "description": "",
+    "unitId": "gb",
+    "modifiedBy": "6df558f7-25df-4222-96b9-ade784399d19"
+  },
+  "0070ea7f-6cca-4195-80a4-2c4f81c6f556": {
+    "resourceKinds": [
+      {
+        "resourceKindKey": "Storage Tier",
+        "adapterKindKey": "Container"
+      }
+    ],
+    "modificationTime": 1586918220782,
+    "name": "Storage Tier - Total Capacity",
+    "formula": "sum(${adaptertype=VMWARE, objecttype=Datastore, metric=capacity|total_capacity, depth=1})",
+    "description": "",
+    "unitId": "gb",
+    "modifiedBy": "6df558f7-25df-4222-96b9-ade784399d19"
+  }
+}

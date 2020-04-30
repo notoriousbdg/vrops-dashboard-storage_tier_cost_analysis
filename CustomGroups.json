@@ -1,0 +1,67 @@
+{
+   "customGroups": [
+      {
+         "resourceKind": "Storage Tier",
+         "membershipDefinition": {"ruleGroups": [{
+            "resourceKind": "Datastore",
+            "adapterKind": "VMWARE",
+            "rules": [
+               {
+                  "ruleType": "StringMetricPropertyRule",
+                  "ruleMetricKey": "summary|tag",
+                  "isProperty": true,
+                  "ruleStringOperator": "NOT_CONTAINS",
+                  "ruleStringValue": "<Storage Tier-"
+               },
+               {
+                  "ruleType": "StringMetricPropertyRule",
+                  "ruleMetricKey": "summary|isLocal",
+                  "isProperty": true,
+                  "ruleStringOperator": "EQUALS",
+                  "ruleStringValue": "true"
+               }
+            ]
+         }]},
+         "adapterKind": "Container",
+         "autoResolveMembership": true,
+         "name": "Untagged Local Storage",
+         "description": "",
+         "started": true
+      },
+      {
+         "resourceKind": "Storage Tier",
+         "membershipDefinition": {"ruleGroups": [{
+            "resourceKind": "Datastore",
+            "adapterKind": "VMWARE",
+            "rules": [
+               {
+                  "ruleType": "StringMetricPropertyRule",
+                  "ruleMetricKey": "summary|tag",
+                  "isProperty": true,
+                  "ruleStringOperator": "NOT_CONTAINS",
+                  "ruleStringValue": "<Storage Tier-"
+               },
+               {
+                  "ruleType": "StringMetricPropertyRule",
+                  "ruleMetricKey": "summary|isLocal",
+                  "isProperty": true,
+                  "ruleStringOperator": "EQUALS",
+                  "ruleStringValue": "false"
+               }
+            ]
+         }]},
+         "adapterKind": "Container",
+         "autoResolveMembership": true,
+         "name": "Untagged Shared Storage",
+         "description": "",
+         "started": true
+      }
+   ],
+   "customGroupTypes": [{
+      "resourceKind": "Storage Tier",
+      "localization": [{
+         "resourceKindName": "Storage Tier",
+         "locale": "en"
+      }]
+   }]
+}
