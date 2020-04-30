@@ -2,12 +2,12 @@
 # Storage Tier Cost Analysis Dashboard for vRealize Operations 8.1
 ---------
 
-Use this [vRealize Operations](https://www.vmware.com/products/vrealize-operations.html) dashboard to expore storage costs by tiers.  The cost engine in vRealize Operations allows setting storage base rates (cost per GB per month) using vSphere Tags.  Creating custom groups for the storage vSphere Tags can be leveraged to provide better insight into storage cost and utilization.  To use the dashboard, select a Storage Tier from the list to see utilization, cost, and potential savings for the entire tier.  Select a datastore to invesigate from one of the top-n views to see the details for the specific datastore.
+Use this [vRealize Operations](https://www.vmware.com/products/vrealize-operations.html) dashboard to explore storage costs by tiers.  The cost engine in vRealize Operations allows setting storage base rates (cost per GB per month) using vSphere Tags.  Custom groups based on the same vSphere Tags can be leveraged to provide better insight into storage cost and utilization.  To use this dashboard, select a Storage Tier from the list to see utilization, cost, and potential savings for the entire tier.  Select a datastore from one of the top-n views to see the details for the specific datastore.
 
 Please note that this dashboard requires additional configuration after importing.  Refer to the [Configuration section](#Configuration) below for details.
 
 ## Dashboard
-![Dashboard](https://raw.githubusercontent.com/notoriousbdg/vrops-dashboard-storage_tier_cost_analysis/master/Dashboard.png)
+![Dashboard](https://raw.githubusercontent.com/notoriousbdg/vrops-dashboard-storage_tier_cost_analysis/master/images/Dashboard.png)
 
 ## Installation
 1. Import the custom groups at `Environment` / `Custom Groups` / `Gear Icon` / `Import Custom Group(s)`  
