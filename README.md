@@ -1,5 +1,5 @@
 
-# Storage Tier Cost Analysis Dashboard for vRealize Operations 8.1
+# Storage Tier Cost Analysis Dashboard for vRealize Operations 8.1 and Cloud
 ---------
 
 Use this [vRealize Operations](https://www.vmware.com/products/vrealize-operations.html) dashboard to explore storage costs by tiers.  The cost engine in vRealize Operations allows setting storage base rates (cost per GB per month) using vSphere Tags.  Custom groups based on the same vSphere Tags can be leveraged to provide better insight into storage cost and utilization.  To use this dashboard, select a Storage Tier from the list to see utilization, cost, and potential savings for the entire tier.  Select a datastore from one of the top-n views to see the details for the specific datastore.
@@ -73,7 +73,7 @@ Please note that this dashboard requires additional configuration after importin
 
 ## Support
 
-This dashboard requires vRealize Operation 8.1 Advanced or Enterprise edition.
+This dashboard requires vRealize Operation 8.1 Advanced or Enterprise edition or vRealize Operations Cloud.
 
 Please open an [issue](https://github.com/notoriousbdg/vrops-dashboard-storage_tier_cost_analysis/issues) for feedback.
 
